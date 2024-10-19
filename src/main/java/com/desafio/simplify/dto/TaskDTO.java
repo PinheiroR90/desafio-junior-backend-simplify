@@ -1,25 +1,25 @@
 package com.desafio.simplify.dto;
 
-import com.desafio.simplify.entities.User;
-import com.desafio.simplify.enums.UserEnum;
+import com.desafio.simplify.entities.Task;
+import com.desafio.simplify.enums.TaskEnum;
 
-public class UserDTO {
+public class TaskDTO {
     private Long id;
     private String name;
     private String description;
     private Boolean perform;
-    private UserEnum priority;
+    private TaskEnum priority;
 
-    public UserDTO(){}
+    public TaskDTO(){}
 
-    public UserDTO(Long id, String name, String description, Boolean perform, UserEnum priority) {
+    public TaskDTO(Long id, String name, String description, Boolean perform, TaskEnum priority) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.perform = perform;
         this.priority = priority;
     }
-    public UserDTO(User entity) {
+    public TaskDTO(Task entity) {
         id = entity.getId();
         name = entity.getName();
         description = entity.getDescription();
@@ -60,11 +60,11 @@ public class UserDTO {
         this.perform = perform;
     }
 
-    public UserEnum getPriority() {
+    public TaskEnum getPriority() {
         return priority;
     }
 
-    public void setPriority(UserEnum priority) {
+    public void setPriority(TaskEnum priority) {
         this.priority = priority;
     }
 }

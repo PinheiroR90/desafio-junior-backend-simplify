@@ -1,6 +1,6 @@
 package com.desafio.simplify.enums;
 
-public enum UserEnum {
+public enum TaskEnum {
     SMALL,
     MEDIUM,
     HIGH

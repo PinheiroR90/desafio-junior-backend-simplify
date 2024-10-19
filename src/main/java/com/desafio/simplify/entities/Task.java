@@ -1,11 +1,11 @@
 package com.desafio.simplify.entities;
 
-import com.desafio.simplify.enums.UserEnum;
+import com.desafio.simplify.enums.TaskEnum;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "users")
-public class User {
+@Table(name = "tasks")
+public class Task {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,11 +13,11 @@ public class User {
     private String name;
     private String description;
     private Boolean perform;
-    private UserEnum priority;
+    private TaskEnum priority;
 
-    public User(){}
+    public Task(){}
 
-    public User(Long id, String name, String description, Boolean perform, UserEnum priority) {
+    public Task(Long id, String name, String description, Boolean perform, TaskEnum priority) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -57,11 +57,11 @@ public class User {
         this.perform = perform;
     }
 
-    public UserEnum getPriority() {
+    public TaskEnum getPriority() {
         return priority;
     }
 
-    public void setPriority(UserEnum priority) {
+    public void setPriority(TaskEnum priority) {
         this.priority = priority;
     }
 }
