@@ -1,3 +1,10 @@
+# Tecnologias dessa aplicação
+  - Java 17
+  - Springboot
+  - PostgreSQL
+# Como executar
+ - clone o projeto, entre e rode dentro de sua IDE.
+
 # Desafio sistema de gerenciamento de tarefas (To-Do List)
 Repositório para ser usado pelos candidatos à vaga de Desenvolvedor Júnior Backend Liferay da Simplify
 
